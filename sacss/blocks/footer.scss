@@ -21,7 +21,8 @@ padding-bottom: 230px;
 }
 .footer-l .БK {
   color: var(--Grayscale-White, #FFF);
-  font-feature-settings: 'clig' off, 'liga' off;
+  -webkit-font-feature-settings: 'clig' off, 'liga' off;
+          font-feature-settings: 'clig' off, 'liga' off;
   font-family: Montserrat;
   font-size: 32px;
   font-style: normal;
@@ -52,6 +53,46 @@ margin-bottom: 20px;
 
 background-color: #2C3878;
 }
+::-webkit-input-placeholder {
+  color: var(--Grayscale-White, #ffffff);
+/* Montserrat/Regular/16 */
+font-family: Montserrat;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 160%; 
+padding-left: 20px;
+}
+::-moz-placeholder {
+  color: var(--Grayscale-White, #ffffff);
+/* Montserrat/Regular/16 */
+font-family: Montserrat;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 160%; 
+padding-left: 20px;
+}
+:-ms-input-placeholder {
+  color: var(--Grayscale-White, #ffffff);
+/* Montserrat/Regular/16 */
+font-family: Montserrat;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 160%; 
+padding-left: 20px;
+}
+::-ms-input-placeholder {
+  color: var(--Grayscale-White, #ffffff);
+/* Montserrat/Regular/16 */
+font-family: Montserrat;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 160%; 
+padding-left: 20px;
+}
 ::placeholder {
   color: var(--Grayscale-White, #ffffff);
 /* Montserrat/Regular/16 */
@@ -63,9 +104,13 @@ line-height: 160%;
 padding-left: 20px;
 }
 form button {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
   display: inline-flex;
 padding: 14px 32px;
-align-items: flex-start;
+-webkit-box-align: start;
+    -ms-flex-align: start;
+        align-items: flex-start;
 gap: 10px;
 background: var(--Grayscale-White, #FFF);
  border-style:none ;
@@ -81,16 +126,29 @@ line-height: 150%;
 }
 
 .flex-box1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .flex-box2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .footer-flex-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
   
   @media screen  and (max-width:1279px) and (min-width:768px) {
@@ -113,8 +171,13 @@ line-height: 150%;
     padding-bottom: 40px;
   }
   .flex-box1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     padding: 10px;
     padding-bottom: 80px;
   }
@@ -137,7 +200,8 @@ line-height: 150%;
 }
 @media screen  and (max-width:767px) {
   .footer-container {
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     width: 349px;
       margin: 0 13px; 
     
@@ -151,14 +215,24 @@ line-height: 150%;
     padding-top: 170px;
   }
   .flex-box1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     padding: 10px;
     padding-bottom: 50px;
   }
   .flex-box2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     padding: 10px;
     padding-bottom: 20px;
   } 
@@ -169,8 +243,13 @@ line-height: 150%;
   width: 340px;
   }
   .footer-flex-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     margin-left: 0px; 
     
   }

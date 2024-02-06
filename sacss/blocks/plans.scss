@@ -97,10 +97,19 @@ height: 140px;
     // стили для грид сетки
 
 .plans-grid-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-  justify-content: center;
-   flex-direction: column;
-   align-items: start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+   -webkit-box-orient: vertical;
+   -webkit-box-direction: normal;
+       -ms-flex-direction: column;
+           flex-direction: column;
+   -webkit-box-align: start;
+       -ms-flex-align: start;
+           align-items: start;
 }
 .plans-grid {
     display: grid;
@@ -212,7 +221,8 @@ right: 10px;
 .second_img_Pl {
   width: 834px;
   height: 436px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   }
 }
 
@@ -327,7 +337,8 @@ height: 140px;
   .second_img_Pl {
     width:375px;
     height: 250px;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     }
   }
   

@@ -55,20 +55,38 @@ line-height: 140%; /* 100.8px */
     border: 1px solid; 
     border: #2C3878;
     background-color: #2C3878;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-  justify-content: center;
-   flex-direction: column;
-   align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+   -webkit-box-orient: vertical;
+   -webkit-box-direction: normal;
+       -ms-flex-direction: column;
+           flex-direction: column;
+   -webkit-box-align: center;
+       -ms-flex-align: center;
+           align-items: center;
    position: absolute;
     
    top: 335px;
     right: 140px;
   }
   .billboard_p {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-  justify-content: center;
-   flex-direction: column;
-   align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+   -webkit-box-orient: vertical;
+   -webkit-box-direction: normal;
+       -ms-flex-direction: column;
+           flex-direction: column;
+   -webkit-box-align: center;
+       -ms-flex-align: center;
+           align-items: center;
    padding: 25px;
   }
   .billboard-title { color: #FFF;
@@ -103,7 +121,8 @@ padding-bottom: 161px;}
 .Hero_img{
   width: 734px;
   height: 400px;
-  object-fit:fill;
+  -o-object-fit:fill;
+     object-fit:fill;
   
 }
 .line hr { 
@@ -154,7 +173,8 @@ padding-bottom: 161px;}
     .Hero_img{
       width: 345px;
       height: 200px;
-      object-fit:fill;
+      -o-object-fit:fill;
+         object-fit:fill;
       
     }
     .line hr { 
@@ -167,15 +187,27 @@ padding-bottom: 161px;}
     .billboard {
       width: 125px;
       height: 89px;  
-     flex-direction: row; 
+     -webkit-box-orient: horizontal;  
+     -webkit-box-direction: normal;  
+         -ms-flex-direction: row;  
+             flex-direction: row; 
      left: 220px;
      top: 232px;
     }
     .billboard_p {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-    justify-content: center;
-     flex-direction: column;
-     align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+     -webkit-box-orient: vertical;
+     -webkit-box-direction: normal;
+         -ms-flex-direction: column;
+             flex-direction: column;
+     -webkit-box-align: center;
+         -ms-flex-align: center;
+             align-items: center;
      padding: 5px;
     }
     .billboard-title { 

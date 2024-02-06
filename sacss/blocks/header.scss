@@ -19,22 +19,35 @@ header {
     z-index: 2;
     width: 100%;
     background: white;
-    backdrop-filter: blur(13px);
+    -webkit-backdrop-filter: blur(13px);
+            backdrop-filter: blur(13px);
   }
   
   /* сделали строчный режим */
   
   .header-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     height: 80px;
     
   }
   .header-nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     list-style-type: none;
     margin: 0;
     width: 575px;
@@ -57,7 +70,8 @@ line-height: 160%;
 }
 .log {
   color: var(--Grayscale-Black, #000);
-font-feature-settings: 'clig' off, 'liga' off;
+-webkit-font-feature-settings: 'clig' off, 'liga' off;
+        font-feature-settings: 'clig' off, 'liga' off;
 font-family: Montserrat;
 font-size: 31.93px;
 font-style: normal;
@@ -65,9 +79,13 @@ font-weight: 700;
 line-height: 170%;
 }
   .button {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
     display: inline-flex;
     padding: 14px 32px;
-    align-items: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
     gap: 10px;
     border: 1px solid var(--Grayscale-30, #3C3C3C);
     background: var(--Primary-Blue-100, #2C3878);
@@ -92,18 +110,30 @@ line-height: 170%;
     }
 
     .header-container {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      justify-content: space-between;
-      align-items: center;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
       height: 60px;
       width: 734px;  
       margin:0 50px;
     margin-left: -140px;
   }
   .header-nav {width: 480px; 
+    display: -webkit-box; 
+    display: -ms-flexbox; 
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     list-style-type: none;
     margin: 0;
   }
@@ -139,7 +169,8 @@ padding-bottom: 161px;}
 .Hero_img{
   width: 734px;
   height: 400px;
-  object-fit:fill;
+  -o-object-fit:fill;
+     object-fit:fill;
   
 }
 .line hr { 
@@ -152,7 +183,10 @@ padding-bottom: 161px;}
 .billboard {
   width: 734px;
   height: 159px;  
- flex-direction: row; 
+ -webkit-box-orient: horizontal;  
+ -webkit-box-direction: normal;  
+     -ms-flex-direction: row;  
+         flex-direction: row; 
  left: 0;
  top: 315px;
 }
@@ -180,8 +214,15 @@ padding-bottom: 161px;}
       .header-container {
       
       
+        display: -webkit-box;
+      
+      
+        display: -ms-flexbox;
+      
+      
         display: flex;
-        justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
         
         height: 60px;
         width: 240px;  
@@ -190,9 +231,15 @@ padding-bottom: 161px;}
   }
 
   .header-nav {width: 100%; 
+    display: -webkit-box; 
+    display: -ms-flexbox; 
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     list-style-type: none;
     margin: 0;
     margin-left: 0;

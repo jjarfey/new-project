@@ -63,7 +63,8 @@
 .infrastructure-grid-item img {
   width: 99%;
   height: 100%;
-  object-fit:cover;
+  -o-object-fit:cover;
+     object-fit:cover;
 }
 
 .infrastructure-grid {
@@ -129,7 +130,8 @@
       .infrastructure-grid-item img {
         width: 100%;
         height: 100%;
-        object-fit: cover;
+        -o-object-fit: cover;
+           object-fit: cover;
       }  
     .infrastructure-grid-item:first-child {
       grid-column: 1/3;
@@ -211,7 +213,8 @@
     .infrastructure-grid-item img {
       width: 100%;
       height: 100%;
-      object-fit: cover;
+      -o-object-fit: cover;
+         object-fit: cover;
     }  
   .infrastructure-grid-item:first-child {
     grid-column: 1/2;
